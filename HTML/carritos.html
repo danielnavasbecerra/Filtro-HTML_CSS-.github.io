@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/carritos.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>CampusShop</title>
+    <link rel="icon" href="../IMG/CampusLogo.png">
+</head>
+<body>
+
+    <div class="container">
+
+        <header id="header">
+
+            <a href="../index.html" class="logo">
+                <img src="../IMG/CampusLogo.png" alt="LogoCampus" title="CampusLands">
+                CampusShop
+            </a>
+    
+            <nav id="navbar">
+                <ul id="nav_list">
+                    <li>
+                        <a href="../index.html">
+                            <img src="../IMG/Productos.png" alt="Productos">
+                            Todos los Productos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="abrigos.html">
+                            <img src="../IMG/Abrigo.png" alt="Abrigos">
+                            Abrigos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="camisetas.html">
+                            <img src="../IMG/Camiseta.png" alt="Camisetas">
+                            Camisetas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pantalones.html">
+                            <img src="../IMG/Pantalon.png" alt="Pantalones">
+                            Pantalones
+                        </a>
+                    </li>
+                    <li id="carritos" class="active">
+                        <a href="carritos.html" class="active">
+                            <img src="../IMG/Carrito.png" alt="Carritos">
+                            Carritos
+                            <i class="ri-number-3"></i>
+                        </a>
+                    </li>
+                </ul>
+                <small id="small_navbar">&copy 2023 Daniel Navas</small>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="heading">
+                <span class="section_subtitle">CampusShop</span>
+                <h2 class="section_title">Carrito de Compras</h2>
+            </div>
+            <div class="contenedor-carrito">
+                <div class="carrito-productos">
+
+                    <div class="productos-carrito">
+                        <img class="carrito-producto-imagen" src="https://http2.mlstatic.com/D_NQ_NP_2X_787280-MCO51843885132_102022-F.webp" alt="">
+                        <div class="carrito-producto-titulo">
+                            <small>Título</small>
+                            <h3>Chaqueta Impermeable</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>$ 93.900</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$ 93.900</p>
+                        </div>
+                        <button class="carrito-producto-eliminar"><i class="ri-delete-bin-line"></i></button>
+                    </div>
+                    <div class="productos-carrito">
+                        <img class="carrito-producto-imagen" src="https://http2.mlstatic.com/D_NQ_NP_2X_930447-MCO71410142210_092023-F.webp" alt="">
+                        <div class="carrito-producto-titulo">
+                            <small>Título</small>
+                            <h3>Chaqueta Impermeable</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>2</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>$ 93.900</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$ 187.800</p>
+                        </div>
+                        <button class="carrito-producto-eliminar"><i class="ri-delete-bin-line"></i></button>
+                    </div>
+                    <div class="productos-carrito">
+                        <img class="carrito-producto-imagen" src="https://http2.mlstatic.com/D_NQ_NP_2X_904140-MCO51843801912_102022-F.webp" alt="">
+                        <div class="carrito-producto-titulo">
+                            <small>Título</small>
+                            <h3>Chaqueta Impermeable</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>$ 93.900</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$ 93.900</p>
+                        </div>
+                        <button class="carrito-producto-eliminar"><i class="ri-delete-bin-line"></i></button>
+                    </div>
+                </div>
+                <div class="carrito-acciones">
+                    <div class="carrito-acciones-izquierda">
+                        <a href="vaciarCarro.html" class="carrito-acciones-vaciar">Vaciar carrito</a>
+                    </div>
+                    <div class="carrito-acciones-derecha">
+                        <div class="carrito-acciones-total">
+                            <p>Total:</p>
+                            <p id="total">$ 375.600</p>
+                        </div>
+                        <button class="carrito-acciones-comprar">Comprar ahora</button>
+                    </div>
+                </div>
+                <p class="carrito-comprado disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>

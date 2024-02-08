@@ -1,0 +1,112 @@
+@import url(navbar.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: var(---body-color);
+    margin: 1rem;
+    margin-left: 300px;
+    border-radius: 2rem;
+    padding: 3rem;
+    display: grid;
+    align-content: center;
+}
+
+.heading {
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: var(--h1-font-size);
+}
+
+.container-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 2rem;
+    align-items: center;
+}
+
+.box {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--container-color);
+    box-shadow: 0 8px 20px hsla(19, 64%, 48%, .08);
+    border-radius: 1rem;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Div IMG */
+.box-img {
+    width: 100%;
+    height: 100%;
+}
+
+.box-img img {
+    width: 80%;
+    height: 320px;
+    transition: transform .4s;
+    border-radius: 1rem;
+}
+.box:hover .box-img img {
+    transform: translateY(-.30rem);
+}
+
+/* Div Text */
+.box h2 {
+    font-size: var(--h3-font-size);
+    font-family: var(--title-font);
+    margin-bottom: .25rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.box h3 {
+    color: var(--text-color);
+    font-size: var(--smaller-font-size);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.box span {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: var(--first-color);
+}
+
+/* Button */
+.btn {
+    box-shadow: var(--first-color) 0 0 10px 1px;
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    margin: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--first-color);
+    color: var(--container-color);
+    font-weight: var(--font-medium);
+    border-radius: 4rem;
+    transition: background .3s;
+}
+
+.btn i {
+    font-size: 1.5rem;
+    transition: transform .3s;
+}
+
+.btn:hover {
+    background-color: var(--first-color-alt);
+}
+
+.btn:hover i {
+    transform: translateX(.25rem);
+}
